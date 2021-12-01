@@ -2,8 +2,8 @@ data = [140,154,165,150,151,161,172,174,166,168,176,191,192,189,190,191,202,203,
 
 deeper = 0
 
-for index, value  in enumerate(data):
-    if value > data[index - 1]:
+for index, value  in enumerate(data[1:]):
+    if value > data[index]:
         deeper = deeper + 1
 
 print(deeper)

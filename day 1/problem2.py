@@ -4,14 +4,12 @@ sum = []
 
 deeper = 0
 
-for index,value in enumerate(data):
-    if index == (len(data) - 2):
-        break
-    else:
-        sum.append(value + data[index + 1] + data[index + 2])
+for index,value in enumerate(data[:-2]):
+    sum.append(value + data[index + 1] + data[index + 2])
 
-for index, value  in enumerate(sum):
-    if value > sum[index - 1]:
+
+for index, value  in enumerate(sum[1:]):
+    if value > sum[index]:
         deeper = deeper + 1
 
 print(deeper)
