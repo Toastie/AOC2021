@@ -1,6 +1,3 @@
-from os import O_EXCL
-
-
 with open('day3/input.txt','r') as input:
     data = input.read().split("\n")
 
@@ -11,10 +8,7 @@ def mostCommonBit(data:list,pos:int):
     for j in range(len(data)):
         ones += int(data[j][pos])
 
-    if ones >= (len(data)/2):
-        return 1
-    else:
-        return 0
+    return int( ones >= (len(data)/2) )
 
 oxygen = data
 co2 = data
