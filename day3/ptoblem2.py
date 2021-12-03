@@ -25,6 +25,6 @@ for i in range(len(data[0])):
         oxygen = [value for value in oxygen if int(value[i]) == bit]
     if len(co2) != 1:
         bit = mostCommonBit(co2,i)
-        o2 = [value for value in co2 if int(value[i]) != bit]
+        co2 = [value for value in co2 if int(value[i]) != bit]
 
 print(f"Oxygen: {oxygen}, CO2: {co2}, Multiplied: {int(co2[0],2) * int(oxygen[0],2)}")
