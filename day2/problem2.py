@@ -17,4 +17,4 @@ with open('input.txt', "r") as input:
 print(f"depth: {depth}")
 print(f"Pos: {pos}")
 
-print(f"Combinded: {pos*depth}")
+print(f"Combined: {pos*depth}")
