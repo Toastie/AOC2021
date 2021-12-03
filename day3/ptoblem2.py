@@ -4,14 +4,12 @@ with open('day3/input.txt','r') as input:
 
 def mostCommonBit(data:list,pos:int):
     ones = 0
-
     for j in range(len(data)):
         ones += int(data[j][pos])
 
     return int( ones >= (len(data)/2) )
 
-oxygen = data
-co2 = data
+oxygen = co2 = data
 
 for i in range(len(data[0])):
     if len(oxygen) != 1:
